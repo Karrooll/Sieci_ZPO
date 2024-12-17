@@ -63,6 +63,20 @@ build CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_
   OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
   OBJECT_FILE_DIR = CMakeFiles\Sieci_ZPO.dir
 
+build CMakeFiles/Sieci_ZPO.dir/storage_types.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/storage_types.cpp || cmake_object_order_depends_target_Sieci_ZPO
+  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\storage_types.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"E:/Pulpit/Kierunki/3_sem/Zaawansowanie Programowanie Obiektowe/Zadania ZPO/Sieci_ZPO/."
+  OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sieci_ZPO.dir
+
+build CMakeFiles/Sieci_ZPO.dir/main.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/main.cpp || cmake_object_order_depends_target_Sieci_ZPO
+  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"E:/Pulpit/Kierunki/3_sem/Zaawansowanie Programowanie Obiektowe/Zadania ZPO/Sieci_ZPO/."
+  OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sieci_ZPO.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Sieci_ZPO
@@ -71,7 +85,7 @@ build CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_
 #############################################
 # Link the executable Sieci_ZPO.exe
 
-build Sieci_ZPO.exe: CXX_EXECUTABLE_LINKER__Sieci_ZPO_Debug CMakeFiles/Sieci_ZPO.dir/package.cpp.obj CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj
+build Sieci_ZPO.exe: CXX_EXECUTABLE_LINKER__Sieci_ZPO_Debug CMakeFiles/Sieci_ZPO.dir/package.cpp.obj CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj CMakeFiles/Sieci_ZPO.dir/storage_types.cpp.obj CMakeFiles/Sieci_ZPO.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir

@@ -1,25 +1,38 @@
-
 #ifndef PACKAGE_H
 #define PACKAGE_H
+
+#include "types.h"
 #include <set>
 
-#endif //PACKAGE_H
-#include "types.h"
-
 class Package {
-    public:
+public:
     Package();
-    Package(ElementID ID){ID_ = ID;}
-    Package(Package &&package){ID_(package.ID_);}
+    Package(ElementID ID) : ID_{ID} {assigned_IDs.insert(ID);}
+    Package(Package &&package) : ID_{package.ID_} {}
+
+    Package(const Package& other) : ID_{other.ID_} {
+        assigned_IDs.insert(ID_);
+    }
+
+    Package& operator=(const Package& other) {
+        if (this != &other) {
+            ID_ = other.ID_;
+            assigned_IDs.insert(ID_);
+        }
+        return *this;
+    }
+
+    Package& operator=(Package&& package) noexcept;
+    ElementID get_id() const {return ID_;}
+
     ~Package();
 
-    Package& operator=(Package&& package);
-    ElementID get_id(){return ID_;}
-
-
-    private:
+private:
     ElementID ID_;
-    static std::set<ElementID>  assigned_IDs;
     static std::set<ElementID>  freed_IDs;
+    static std::set<ElementID>  assigned_IDs;
 
 };
+
+#endif
+
