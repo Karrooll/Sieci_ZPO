@@ -10,4 +10,5 @@ add_executable(Sieci_ZPO
         types.h
         storage_types.h
         package.h
-        package.cpp)
+        package.cpp
+        nodes.cpp)

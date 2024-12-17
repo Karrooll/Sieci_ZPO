@@ -11,6 +11,6 @@ enum class PackageQueueType {
     LIFO
 };
 
-class IPackageStockpile {
+class IPackageStockpile{
 
 };

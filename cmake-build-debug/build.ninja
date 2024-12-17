@@ -49,15 +49,15 @@ cmake_ninja_workdir = E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Ob
 
 build cmake_object_order_depends_target_Sieci_ZPO: phony || .
 
-build CMakeFiles/Sieci_ZPO.dir/src.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/src.cpp || cmake_object_order_depends_target_Sieci_ZPO
-  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\src.cpp.obj.d
+build CMakeFiles/Sieci_ZPO.dir/package.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/package.cpp || cmake_object_order_depends_target_Sieci_ZPO
+  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\package.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I"E:/Pulpit/Kierunki/3_sem/Zaawansowanie Programowanie Obiektowe/Zadania ZPO/Sieci_ZPO/."
   OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
   OBJECT_FILE_DIR = CMakeFiles\Sieci_ZPO.dir
 
-build CMakeFiles/Sieci_ZPO.dir/package.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/package.cpp || cmake_object_order_depends_target_Sieci_ZPO
-  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\package.cpp.obj.d
+build CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanned_Debug E$:/Pulpit/Kierunki/3_sem/Zaawansowanie$ Programowanie$ Obiektowe/Zadania$ ZPO/Sieci_ZPO/nodes.cpp || cmake_object_order_depends_target_Sieci_ZPO
+  DEP_FILE = CMakeFiles\Sieci_ZPO.dir\nodes.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I"E:/Pulpit/Kierunki/3_sem/Zaawansowanie Programowanie Obiektowe/Zadania ZPO/Sieci_ZPO/."
   OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
@@ -71,7 +71,7 @@ build CMakeFiles/Sieci_ZPO.dir/package.cpp.obj: CXX_COMPILER__Sieci_ZPO_unscanne
 #############################################
 # Link the executable Sieci_ZPO.exe
 
-build Sieci_ZPO.exe: CXX_EXECUTABLE_LINKER__Sieci_ZPO_Debug CMakeFiles/Sieci_ZPO.dir/src.cpp.obj CMakeFiles/Sieci_ZPO.dir/package.cpp.obj
+build Sieci_ZPO.exe: CXX_EXECUTABLE_LINKER__Sieci_ZPO_Debug CMakeFiles/Sieci_ZPO.dir/package.cpp.obj CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Sieci_ZPO.dir
