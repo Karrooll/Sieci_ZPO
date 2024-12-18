@@ -17,7 +17,7 @@ public:
     virtual void push(Package&& package) = 0;
     virtual bool empty() const = 0;
 
-    std::size_t size() const;
+    virtual std::size_t size() const = 0;
 
     using const_iterator = std::list<Package>::const_iterator;
     virtual const_iterator begin() const = 0;
@@ -43,6 +43,9 @@ public:
     void push(Package&& package) override {queue.push_back(package);}
     bool empty() const override {return queue.empty();}
 
+    std::size_t size() const override {
+        return (*this).queue.size();
+    }
     const_iterator begin() const override
     {
         return (*this).queue.cbegin();

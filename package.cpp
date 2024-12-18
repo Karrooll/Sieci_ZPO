@@ -21,7 +21,8 @@ Package::Package() {
 
 Package::~Package() {
     assigned_IDs.erase(assigned_IDs.find(ID_));
-    freed_IDs.insert(freed_IDs.end(), ID_);
+    freed_IDs.insert(ID_);
+
 }
 
 Package& Package::operator=(Package&& package) noexcept{

@@ -8,7 +8,7 @@ class Package {
 public:
     Package();
     Package(ElementID ID) : ID_{ID} {assigned_IDs.insert(ID);}
-    Package(Package &&package) : ID_{package.ID_} {}
+    Package(Package &&package) : ID_{package.ID_} {package.ID_ = 0;}
 
     Package(const Package& other) : ID_{other.ID_} {
         assigned_IDs.insert(ID_);

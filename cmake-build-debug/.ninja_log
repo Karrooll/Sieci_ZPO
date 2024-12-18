@@ -1,0 +1,6 @@
+# ninja log v6
+43	495	7561818980298271	CMakeFiles/Sieci_ZPO.dir/storage_types.cpp.obj	5e6059fb81e4666e
+12	165	7561727872823373	CMakeFiles/Sieci_ZPO.dir/nodes.cpp.obj	6381fb9307666db4
+38	318	7561818980247286	CMakeFiles/Sieci_ZPO.dir/package.cpp.obj	ccf4864ac2b88ec7
+29	410	7561822620948122	build.ninja	38924bd621baf375
+47	388	7561818980334854	CMakeFiles/Sieci_ZPO.dir/main.cpp.obj	befa373b66b2282
